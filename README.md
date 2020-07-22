@@ -2,7 +2,7 @@
 
 ## Build This
 
-![Military Personnel](assets/interview_exercise.png)
+![Military Personnel](assets/Interview_exercise.png)
 
 - You should have a UI that display more than one soldier.
 - The elements that should be visible:
