@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<title>Soldiers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/main.css">
+<link rel="stylesheet" type="text/css" href="assets/main-fonts.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Karma", sans-serif
+    }
+    
+    .w3-bar-block .w3-bar-item {
+        padding: 20px
+    }
+</style>
+
+<body>
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#Personnel" onclick="w3_close()" class="w3-bar-item w3-button">Personnel</a>
+        <a href="#updateform" onclick="w3_close()" class="w3-bar-item w3-button">Update</a>
+    </nav>
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-right w3-padding-16">Unit Name</div>
+            <div class="w3-center w3-padding-16">Personnel</div>
+        </div>
+    </div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" id="top">
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="Personnel">
+            <div class="w3-quarter">
+                <img src="assets\Images\sd1.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Sergeant Rick Smith</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+            <div class="w3-quarter">
+                <img src="assets\Images\sd2.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Corporal Jim Jones</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+            <div class="w3-quarter">
+                <img src="assets\Images\sd3.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Staff Sergeant Brad Pitt</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+            <div class="w3-quarter">
+                <img src="assets\Images\sd4.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Private First Class Mike Tyson</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+        </div>
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="assets\Images\sd3.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Rank FirstName LastName</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+            <div class="w3-quarter">
+                <img src="assets\Images\sd4.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Rank FirstName LastName</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+            <div class="w3-quarter">
+                <img src="assets\Images\sd1.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Rank FirstName LastName</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+            <div class="w3-quarter">
+                <img src="assets\Images\sd2.jpg" alt="Military Soldier" style="width:100%">
+                <h3>Rank FirstName LastName</h3>
+                <dl style="text-align:left;">
+                    <dt>Time in Service</dt>
+                    <dd>- 01-01-2015</dd>
+                    <dt>Time in Rank</dt>
+                    <dd>- 04-01-2020</dd>
+                </dl>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+        <!-- Form Section -->
+        <h2 class="w3-center">Update or Add Soldier info</h2>
+        <div class="w3-row-padding" id="updateform">
+
+            <div class="w3-middle w3-margin-left w3-margin-left">
+                <form class="w3-container w3-card-4" id="inputform">
+                    <h2>Soldier Info</h2>
+                    <div class="w3-section">
+                        <input class="w3-input" type="text" id="rank" required>
+                        <label>Rank: </label>
+                    </div>
+                    <div class="w3-section">
+                        <input class="w3-input" type="text" id="fName" required>
+                        <label>First Name: </label>
+                    </div>
+                    <div class="w3-section">
+                        <input class="w3-input" type="text" id="lName">
+                        <label>Last Name: </label>
+                    </div>
+                    <div class="w3-section">
+                        <input class="w3-input" type="text" id="dop">
+                        <label>Date of Promotion: </label>
+                    </div>
+                    <div class="w3-center w3-padding-16">
+                        <button class="w3-button w3-black w3-round-xlarge w3-center" type="button" id="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value,document.getElementById('rank').value,document.getElementById('dop').value)">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Footer -->
+            <footer class="w3-row-padding">
+                <div>
+                    <p style="text-align:center"><a href="#top" class="w3-bar-item w3-button w3-hover-black">TOP</a></p>
+                </div>
+            </footer>
+            <!-- End page content -->
+        </div>
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+            // define the callAPI function that takes a first name, last name and rank as parameters
+            var callAPI = (firstName, lastName, rank, dop) => {
+                // instantiate a headers object
+                var myHeaders = new Headers();
+                // add content type header to object
+                myHeaders.append("Content-Type", "application/json");
+                // using built in JSON utility package turn object to string and store in a variable
+                var raw = JSON.stringify({
+                    "firstName": firstName,
+                    "lastName": lastName,
+                    "rank": rank,
+                    "dop": dop
+                });
+                // create a JSON object with parameters for API call and store in a variable
+                var requestOptions = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    body: raw,
+                    redirect: 'follow'
+                };
+                // make API call with parameters and use promises to get response
+                fetch("https://49osbf8ftk.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+                    .then(response => response.text())
+                    .then(result => alert(JSON.parse(result).body))
+                    .catch(error => console.log('error', error));
+            }
+        </script>
+</body>
+
+</html>
